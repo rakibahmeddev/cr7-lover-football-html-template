@@ -1,5 +1,134 @@
+/* ===========Google Fonts===========  */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* ==============Common styles==============  */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* font-family: "Playfair Display", serif; */
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+
+.primary-btn {
+  background-image: linear-gradient(
+    to right,
+    #870000 0%,
+    #190a05 51%,
+    #870000 100%
+  );
+  margin: 20px 0px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.primary-btn:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+}
+
+.section-title {
+  font-size: 44px;
+}
+
+.body-text {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  margin: 10px 0;
+}
+
+/* ================Banner area starts================  */
+#banner-area {
+  padding: 50px 0;
+}
+.banner-area-bg {
+  width: 100%;
+  max-height: auto;
+  background-image: url(../img/field.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  box-shadow: 10px 10px 8px -7px rgba(0, 0, 0, 0.68);
+  -webkit-box-shadow: 10px 10px 8px -7px rgba(0, 0, 0, 0.68);
+  -moz-box-shadow: 10px 10px 8px -7px rgba(0, 0, 0, 0.68);
+}
+.banner-text-container {
+  width: 100%;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 10px;
+  align-items: center;
+}
+
+.banner-text-left-area {
+  padding-right: 20px;
+}
+.banner-title {
+  color: #fff;
+}
+.banner-text-container .body-text {
+  color: #fff;
+  padding-right: 100px;
+}
+.banner-text-right-area img {
+  width: 100%;
+}
+
+/* ================Banner area ends================  */
+
+/* ==========Responsive Media Queries==========  */
+@media screen and (max-width: 768px) {
+  .banner-text-container {
+    padding-top: 100px;
+  }
+  .banner-area-bg {
+  }
+  .banner-text-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .banner-text-left-area {
+    text-align: center;
+    padding: 0;
+  }
+  .banner-title {
+    font-size: 36px;
+  }
+  .banner-text-container .body-text {
+    padding: 0;
+    font-size: 17px;
+  }
 }
