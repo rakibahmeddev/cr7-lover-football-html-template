@@ -275,6 +275,14 @@ nav ul li {
   width: 20px;
   margin-right: 4px;
 }
+.view-all-btn-area {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.view-all-btn-area a {
+  display: none;
+}
 /* ===============Sidebar and Blog area ends===============  */
 
 /* ===========Footer area starts===========  */
@@ -320,7 +328,74 @@ nav ul li {
 
 /* ===========Footer area ends===========  */
 
-/* ==========Responsive Media Queries==========  */
+/* ==========Responsive Media Queries for Tablet==========  */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /* Banner area  */
+  .banner-text-container {
+    padding: 50px 25px;
+  }
+  .section-title {
+    font-size: 28px;
+  }
+  .banner-text-left-area {
+    padding-right: 0px;
+  }
+  .banner-text-container .body-text {
+    color: #fff;
+    padding-right: 0px;
+  }
+
+  /* sidebar and blog area  */
+  .section-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+  .sidebar-container {
+    width: 100%;
+    height: 100%;
+    background-color: #f3fdff;
+    box-shadow: none;
+    margin: auto;
+  }
+  .sidebar-btn-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+  }
+  .sidebar-btn {
+    border: 1px solid;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
+  .sidebar-btn:last-child {
+    background-image: linear-gradient(
+      to right,
+      #870000 0%,
+      #190a05 51%,
+      #870000 100%
+    );
+    margin: 20px 0px;
+    padding: 15px 15px;
+  }
+
+  /* Blog area  */
+  .blogs-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .view-all-btn-area a {
+    display: block;
+  }
+}
+
+/* ==========Responsive Media Queries for Mobile==========  */
 @media screen and (max-width: 768px) {
   /* ========Banner area========  */
   .banner-text-container {
@@ -349,6 +424,7 @@ nav ul li {
   .sidebar-area {
     margin: auto;
   }
+
   .section-container {
     display: flex;
     flex-direction: column;
