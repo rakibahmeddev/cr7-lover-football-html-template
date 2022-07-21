@@ -218,8 +218,9 @@ nav ul li {
 .single-blog:hover {
   width: 97%;
 }
-.blogs-container .single-blog img {
-  width: 100%;
+.blogs-container .single-blog .club-flags img {
+  width: 94px;
+  height: 57px;
 
   cursor: pointer;
 }
@@ -227,6 +228,7 @@ nav ul li {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 25px;
   padding-top: 10px;
 }
@@ -241,7 +243,7 @@ nav ul li {
 
 .single-blog .blog-grid-title {
   text-align: center;
-  font-size: 18px;
+  font-size: 17px;
   cursor: pointer;
   margin: 10px 0;
 }
