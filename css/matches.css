@@ -170,7 +170,7 @@ nav ul li {
   );
   color: #fff;
 }
-.sidebar-btn:last-child {
+.sidebar-btn:first-child {
   background-image: linear-gradient(
     to right,
     #870000 0%,
@@ -187,7 +187,7 @@ nav ul li {
   border-radius: 10px;
   display: inline-block;
 }
-.sidebar-btn:last-child:hover {
+.sidebar-btn:first-child:hover {
   background-position: right center;
   color: #fff;
   text-decoration: none;
@@ -200,6 +200,7 @@ nav ul li {
   gap: 20px;
 }
 .single-blog {
+  padding: 15px 0;
   background-color: #fff;
   border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -219,47 +220,34 @@ nav ul li {
 }
 .blogs-container .single-blog img {
   width: 100%;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+
   cursor: pointer;
 }
 .single-blog .single-blog-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 25px;
   padding-top: 10px;
 }
-.single-blog .transfer {
-  background-color: transparent;
-  border: 1px solid #2ab105;
-  padding: 6px 20px;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
+.club-flags {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.club-flags h4 {
+  padding: 0px 3px;
+}
+
+.single-blog .blog-grid-title {
+  text-align: center;
+  font-size: 18px;
   cursor: pointer;
   margin: 10px 0;
 }
-.single-blog .transfer:hover {
-  background-image: linear-gradient(
-    to right,
-    #870000 0%,
-    #190a05 51%,
-    #870000 100%
-  );
-  color: #fff;
-  border: none;
-  transform: scale(1.2);
-  box-shadow: 10px 10px 8px -7px rgba(0, 0, 0, 0.68);
-  -webkit-box-shadow: 10px 10px 8px -7px rgba(0, 0, 0, 0.68);
-  -moz-box-shadow: 10px 10px 8px -7px rgba(0, 0, 0, 0.68);
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  -o-transform: scale(1.2);
-}
-.single-blog .blog-grid-title {
-  font-size: 16px;
-  cursor: pointer;
+.match-time {
+  text-align: center;
+  margin-top: -10px;
 }
 .blog-grid-icons-container {
   display: flex;
